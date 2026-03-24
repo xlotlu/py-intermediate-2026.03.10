@@ -6,9 +6,24 @@ Cheatsheet & stuff
  - totul este o referință
  - totul este un obiect
 
+Python is self-documenting.
 
-PEP-8: the styleguide
+
+De citit o dată în viață:
+-------------------------
+
+(dacă ești programator)
+
+PEP-8: the styleguide:
 https://peps.python.org/pep-0008/
+
+
+Basic data-types:
+https://docs.python.org/3/library/stdtypes.html
+
+
+Formatting strings (se aplică la .format() și la f-strings):
+https://docs.python.org/3/library/string.html#format-examples
 
 
 Concepte:
@@ -37,19 +52,26 @@ and
 or
 not
 
+in
+not in
+
+is
 
 Essential debugging tools:
 --------------------------
 
 print()
 help()
+repr()
 
 
 Excepții importante:
 --------------------
 
 NameError:  variabila (funcția etc.) nu a fost definită
-
+IndexError
+ValueError: poate apărea în mai multe contexte,
+            când valoarea nu este "corectă"
 
 Metode importante ale str-ului:
 -------------------------------
@@ -73,6 +95,21 @@ mai puțini importante:
 
 .translate() [TODO?]
 
+
+Sequences:
+----------
+
+str, list, tuple
+
+sunt data-type-uri:
+ - iterabile
+ - cu acces după index
+ - și acces după slice
+ - au lungime (suportă funcția `len`)
+ - suportă operatorul `in` și `not in`
+ - au metodele `.count()` și `.index()`
+ - suportă operatorii `+` și `*`
+
 Lucrul cu VSCode:
 -----------------
 
@@ -84,3 +121,8 @@ Essential wisdom:
 -----------------
 
 OCD = obsessive-compulsive disorder
+
+There are 2 hard problems in computing:
+- naming things
+- cache invalidation
+- off-by-one errors
