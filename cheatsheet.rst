@@ -56,6 +56,7 @@ in
 not in
 
 is
+is not
 
 Essential debugging tools:
 --------------------------
@@ -72,6 +73,8 @@ NameError:  variabila (funcția etc.) nu a fost definită
 IndexError
 ValueError: poate apărea în mai multe contexte,
             când valoarea nu este "corectă"
+KeyError:   lipsește cheia
+            (la dicționare și alte data-type-uri asemănătoare)
 
 Metode importante ale str-ului:
 -------------------------------
@@ -89,7 +92,7 @@ Metode importante ale str-ului:
 
 .format()
 
-mai puțini importante:
+mai puțin importante:
 
 .center() / .ljust() / .rjust()
 
@@ -126,3 +129,5 @@ There are 2 hard problems in computing:
 - naming things
 - cache invalidation
 - off-by-one errors
+
+DRY = don't repeat yourself
